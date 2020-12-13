@@ -1,0 +1,101 @@
+main {
+  padding: 30px;
+  width: 50%;
+  color: navy;
+}
+
+#titulo{
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 2%; 
+  font-size: 30px;
+  background: #ecf0f1;
+}
+
+main form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "nome nome nome cpf"
+    "email email telefone celular"
+    "assunto assunto assunto motivo"
+    "message message message message"
+    "btn1 btn1 btn btn ";
+  grid-gap: 1rem;
+}
+
+main form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+main form .nome {
+  grid-area: nome;
+}
+
+main form .telefone {
+  grid-area: telefone;
+}
+
+main form .celular {
+  grid-area: celular;
+}
+
+main form .email {
+  grid-area: email;
+}
+
+main form .cpf {
+  grid-area: cpf;
+}
+
+main form .assunto {
+  grid-area: assunto;
+}
+
+main form label {
+  font-size: .9rem;
+  font-weight: bold;
+  margin-bottom: .3rem;
+}
+
+main form input {
+  outline: none;
+  height: 1.5rem;
+}
+
+main form .message {
+  grid-area: message;
+}
+
+main form .motivo {
+  grid-area: motivo;
+}
+
+main form .btn1 {
+  grid-area: btn1;
+}
+
+.btn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #2d3436 5%, #636e72 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	color: white;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 60px;
+	text-decoration:none;
+  text-align: center;
+}
+.btn:hover {
+	background:linear-gradient(to bottom,#6c5ce7 5%, navy 100%);
+	background-color:#f6f6f6;
+}
+.btn:active {
+	position: relative;
+	top:1px;
+}

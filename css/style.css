@@ -1,0 +1,192 @@
+/*Folha de Estilo da Página Principa*/
+/*Estilização do Header*/
+
+header{
+  background-color: #ecf0f1;
+  min-height: 150px;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-items: start;
+  align-content: center;
+}
+
+header{
+  animation: titulo 20s infinite;
+}
+
+@keyframes titulo {
+  0% {background-color: #f7f1e3;}
+  25% {background-color: #b2bec3;}
+  50% {background-color: #f7f1e3;}
+  75% {background-color: #b2bec3;}
+  100% {background-color: #f7f1e3;}
+}
+
+
+.topo_logo{
+  justify-self: center;
+}
+
+#topo_social {
+  color: #192a56;
+  font-size: 25px;
+  align-self: end;
+  padding-bottom: 50px;
+}
+
+
+.titulo{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 35px;
+  color:#273c75;
+}
+
+.subtitulo{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  color: #b33939;
+}
+/*--------------------------*/
+
+/*Botões do Centro da Página*/
+
+#content{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/contract.jpg");
+  background-size: 100%;
+  min-height: 600px; 
+}
+
+
+.btn_center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.btn_type1 {
+  flex: 0 0 auto;
+  margin: 30px;
+  flex-direction: column;
+  font-family: lato, roboto, opens sans;
+}
+
+.btn_type1 {
+	box-shadow: 0px 0px 7px 0px #276873;
+	background-color: #f7f1e3;
+	border-radius:6px;
+	border:1px solid #a1b5c2;
+	display:flex;
+	cursor:pointer;
+	color:#192a56;
+	font-family:Arial;
+	font-size:40px;
+	padding: 50px 50px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #68b5d1;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_type1:hover {
+	background-color:#d1ccc0;
+}
+
+.btn_type1:active {
+	position:relative;
+	top:1px;
+}
+
+/*---------------------------*/
+
+/*Estilização dos Botões da Barra de Menu no Topo*/
+#menu{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: right;
+  background-color: white;
+  min-height: 50px; 
+}
+
+.btn_type2{
+	box-shadow: 6px 4px 6px -3px #91b8b3;
+	background-color:#768d87;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 40px;
+	text-decoration:none;
+	text-shadow:2px 0px 1px #2b665e;
+}
+.btn_type2:hover {
+	background-color:#6c7c7c;
+}
+.btn_type2:active {
+	position:relative;
+	top:1px;
+}
+/*--------------------------*/
+
+/* Estilização do Footer */
+footer{
+  background-color:#ecf0f1;
+  min-height: 200px;
+  padding: 50px;
+  text-align: center;
+}
+
+.rodape{
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.map{
+  justify-self:end;
+}
+
+#adress{
+  color: #192a56;
+  font-size: 16px;
+  justify-self: start;
+  padding-left: 20px;
+  text-align: left;
+}
+
+#contato{
+  text-align: center;
+  font-size:18px;
+  font-weight: bold;
+}
+
+#contato :hover {
+	color: orangered;
+}
+
+#contato :link, #contato :visited {
+	text-decoration: none;
+	}
